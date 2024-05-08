@@ -1,19 +1,48 @@
 import sys
 
-LIQUIDS = ["water", "water_ice", "water_swamp",
+LIQUIDS = [
+#  Noita 1.0
+'''
+"water", "water_ice", "water_swamp",
 "oil", "alcohol", "swamp", "mud", "blood",
 "blood_fungi", "blood_worm", "radioactive_liquid",
 "cement", "acid", "lava", "urine",
 "poison", "magic_liquid_teleportation",
 "magic_liquid_polymorph", "magic_liquid_random_polymorph",
 "magic_liquid_berserk", "magic_liquid_charm",
-"magic_liquid_invisibility"]
+"magic_liquid_invisibility"
+'''
 
-ORGANICS = ["sand", "bone", "soil", "honey",
+#  Noita 2024-04-30
+"acid", "alcohol", "blood",
+"blood_fungi", "blood_worm", "cement",
+"lava", "magic_liquid_berserk", "magic_liquid_charm",
+"magic_liquid_faster_levitation", "magic_liquid_faster_levitation_and_movement", "magic_liquid_invisibility",
+"magic_liquid_mana_regeneration", "magic_liquid_movement_faster", "magic_liquid_protection_all",
+"magic_liquid_teleportation", "magic_liquid_unstable_polymorph", "magic_liquid_unstable_teleportation",
+"magic_liquid_worm_attractor", "material_confusion", "mud",
+"oil", "poison", "radioactive_liquid_yellow",
+"swamp", "urine", "water",
+"water_ice", "water_swamp", "magic_liquid_random_polymorph"
+]
+
+ORGANICS = [
+#  Noita 1.0
+'''
+"sand", "bone", "soil", "honey",
 "slime", "snow", "rotten_meat", "wax",
 "gold", "silver", "copper", "brass", "diamond",
 "coal", "gunpowder", "gunpowder_explosive",
-"grass", "fungi"]
+"grass", "fungi"
+'''
+#  Noita 2024-04-30
+"bone_box2d", "brass", "coal",
+"copper", "diamond", "fungi",
+"gold", "grass", "gunpowder",
+"gunpowder_explosive", "rotten_meat", "sand_petrify",
+"silver", "slime", "snow_b2",
+"soil", "wax", "honey"
+]
 
 def swap(arr, idx1, idx2):
     v1 = arr[idx1]
